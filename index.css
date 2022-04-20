@@ -22,8 +22,8 @@ body {
   ________________________________________*/
   .accordion {
     position: relative;
-    margin: 60px auto;
-    width: 50%;
+    margin: 20px auto;
+    width: 45%;
   }
   
   [id*="open-accordion"], [id*="close-accordion"] {
@@ -76,10 +76,10 @@ body {
     background: #fff;
     height: 0;
     margin: -1px auto 0;
-    padding: 0 2.5%;
+    padding: 0;
     position: relative;
     overflow: hidden;
-    width: 90%;
+    width: 80%;
     transition: all 0.1s ease;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -88,8 +88,8 @@ body {
   .accordion span:target ~ .accordion-content {
     display: block;
     height: auto;
-    padding-bottom: 25px;
-    padding-top: 10px;
+    /* padding-bottom: 25px; */
+    /* padding-top: 10px; */
   }
   
   .accordion span:target ~ [id*="close-accordion"] {
@@ -115,9 +115,9 @@ body {
 .wrapper {
   padding: 0 20px;
 }
-.wrapper-content {
+/* .wrapper-content {
   padding: 20px 10px 40px;
-}
+} */
 #page-wrapper {
   padding: 0 15px;
   min-height: 568px;
@@ -142,10 +142,10 @@ body {
   margin-right: 10px;
 }
 .chat-user-name {
-  padding: 10px;
+  padding: 0px;
 }
 .chat-user {
-  padding: 8px 10px;
+  padding: 5px ;
   border-bottom: 1px solid #e7eaec;
 }
 .chat-user a {
@@ -156,7 +156,7 @@ body {
 }
 .chat-users,
 .chat-statistic {
-  margin-left: -30px;
+  margin-left: -0px;
 }
 @media (max-width: 992px) {
   .chat-users,
@@ -190,7 +190,8 @@ body {
   border: 1px solid #e7eaec;
   text-align: left;
   display: block;
-  padding: 10px 20px;
+  padding: 10px ;
+  
   position: relative;
   border-radius: 4px;
 }
@@ -202,11 +203,11 @@ body {
 }
 .chat-discussion .chat-message.left .message {
   text-align: left;
-  margin-left: 55px;
+  margin-left: 10px;
 }
 .chat-discussion .chat-message.right .message {
   text-align: right;
-  margin-right: 55px;
+  margin-right: 10px;
 }
 .message-date {
   font-size: 10px;
@@ -216,8 +217,8 @@ body {
   display: block;
 }
 .chat-discussion {
-  background: #eee;
-  padding: 15px;
+  /* background: #eee; */
+  padding: 0px;
   height: 400px;
   overflow-y: auto;
 }
@@ -230,7 +231,7 @@ body {
 }
 .ibox {
   clear: both;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   margin-top: 0;
   padding: 0;
 }
@@ -293,4 +294,25 @@ body {
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     width: 100%;
     font-size: 14px;
+}
+
+#borderradius {
+  border: 1px solid #e0e0e0!important;
+  border-top-color: rgb(224, 224, 224) !important;
+  border-top-style: solid !important;
+  border-top-width: 0.5px !important;
+  border-right-color: rgb(224, 224, 224) !important;
+  border-right-style: solid !important;
+  border-right-width: 0.5px !important;
+  border-bottom-color: rgb(224, 224, 224) !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 0.5px !important;
+  border-left-color: rgb(7, 6, 6) !important;
+  border-left-style: solid !important;
+  border-left-width: 1px !important;
+  border-image-source: initial !important;
+  border-image-slice: initial !important;
+  border-image-width: initial !important;
+  border-image-outset: initial !important;
+  border-image-repeat: initial !important;
 }
